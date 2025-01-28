@@ -1,8 +1,16 @@
 ---
-const platform = "github";
-const username = "Kainny2000";
+import Social from './Social.astro';
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+<footer>  
+  <Social platform="twitter" username="KainnyGodinez" />
+  <Social platform="github" username="kainny2000" />
+  <Social platform="youtube" username="kainny2000" />
 </footer>
