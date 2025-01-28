@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "About Me";
@@ -29,26 +31,24 @@ const textCase = "uppercase";
     
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        
-        <h1>{pageTitle}</h1>
-        <h2>... and my progress learning Astro!</h2>
-      
-        <p>This about me is the first astro page I create with the help of the tutorial knowledge.</p>
-        <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-        <p>Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I am from {identity.originCountry} although I live currently in {identity.currentResidence}and I work as a {identity.currentOccupation} currently.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
-      </body>
+    <Navigation />
+    <h1>{pageTitle}</h1>
+    <h2>... and my progress learning Astro!</h2>
+  
+    <p>This about me is the first astro page I create with the help of the tutorial knowledge.</p>
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>Here are a few facts about me:</p>
+    <ul>
+      <li>My name is {identity.firstName}.</li>
+      <li>I am from {identity.originCountry} although I live currently in {identity.currentResidence}and I work as a {identity.currentOccupation} currently.</li>
+      {identity.hobbies.length >= 2 &&
+      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
+      }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+    <Footer />
+  </body>
 </html>
