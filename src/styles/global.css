@@ -53,6 +53,7 @@ html {
     text-transform: uppercase;
   }
   
+
   .nav-links a:hover,
   .nav-links a:focus {
     background-color: #a16dc8;
@@ -76,7 +77,7 @@ html {
       padding: 15px 20px;
     }
   
-  }
-  .hamburger {
-    display: none;
+    .hamburger {
+      display: none;
+    }
   }
