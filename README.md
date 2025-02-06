@@ -7,6 +7,7 @@ npm create astro@latest -- --template minimal
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+[![Open in IDX](https://cdn.idx.dev/btn/open_light_32.svg)](https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2FKainny2000%2Fastro-testing-1)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
