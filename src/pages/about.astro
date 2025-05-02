@@ -7,7 +7,8 @@ const identity = {
   lastName: "Godinez",
   originCountry: "Mexico",
   currentResidence: "Utah",
-  currentOccupation: "Loan Officer",
+  currentJob: "Mountain America CU",
+  currentJobOccupation: "Loan Officer",
   hobbies: ["music", "videogames", "baseball"],
 };
 
@@ -21,7 +22,7 @@ const skills = ["Python", "HTML", "CSS", "JavaScript", "Astro", "C++"];
   <p>Here are a few facts about me:</p>
   <ul>
     <li>My name is {identity.firstName}.</li>
-    <li>I am from {identity.originCountry} although I live currently in {identity.currentResidence}and I work as a {identity.currentOccupation} currently.</li>
+    <li>I am from {identity.originCountry} although I live currently in {identity.currentResidence} and I work at {identity.currentJob} as a {identity.currentJobOccupation} currently.</li>
     {identity.hobbies.length >= 2 &&
     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
     }
